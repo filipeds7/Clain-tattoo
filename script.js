@@ -1,0 +1,10 @@
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');
+toggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle?.setAttribute('aria-expanded','false')}));
+const carousel=document.querySelector('#carousel'),next=document.querySelector('.next'),prev=document.querySelector('.prev');
+const amount=()=>{const c=carousel?.querySelector('.work-card');return c?c.getBoundingClientRect().width+12:300};
+next?.addEventListener('click',()=>carousel?.scrollBy({left:amount(),behavior:'smooth'}));
+prev?.addEventListener('click',()=>carousel?.scrollBy({left:-amount(),behavior:'smooth'}));
+const sections=document.querySelectorAll('main section[id]'),links=document.querySelectorAll('.nav a');
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')===`#${e.target.id}`))}),{rootMargin:'-35% 0px -55% 0px'});
+sections.forEach(s=>observer.observe(s));
