@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-<rect width="600" height="600" fill="#111114"/><rect x="22" y="22" width="556" height="556" rx="14" fill="none" stroke="#3a3940"/>
-<g fill="none" stroke="#e6e3e8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".94"><circle cx="300" cy="260" r="105"/><circle cx="300" cy="260" r="88"/><path d="M300 260 L300 205 M300 260 L350 285"/><path d="M230 380 Q300 420 370 380"/><path d="M240 395 L215 430 M360 395 L385 430"/></g>
-<g fill="none" stroke="#77727e" stroke-width="2" opacity=".55"><circle cx="300" cy="300" r="190"/><circle cx="300" cy="300" r="205"/></g>
-<text x="300" y="520" text-anchor="middle" fill="#a000ff" font-family="Arial,sans-serif" font-size="22" letter-spacing="7">RELÓGIO</text>
-<text x="300" y="550" text-anchor="middle" fill="#77727e" font-family="Arial,sans-serif" font-size="11" letter-spacing="3">KTTATTOO • ARTE DEMONSTRATIVA</text>
-</svg>
